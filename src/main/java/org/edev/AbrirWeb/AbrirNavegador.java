@@ -10,7 +10,7 @@ public class AbrirNavegador {
         try {
             String url = "https://web.whatsapp.com";
             // Abre o Microsoft Edge com a URL
-            String command = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe --new-window " + url;
+            String command = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe --new-window " + url; //defina o local do .exe do seu navegador
             Runtime.getRuntime().exec(command);
             Thread.sleep(7000);
          VerificarSeAJanelaAbriu verificarSeAJanelaAbriu = new VerificarSeAJanelaAbriu();

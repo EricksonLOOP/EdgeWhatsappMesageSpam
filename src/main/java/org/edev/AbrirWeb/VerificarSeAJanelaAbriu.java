@@ -18,7 +18,7 @@ public class VerificarSeAJanelaAbriu {
                 char[] windowText = new char[512];
                 user32.GetWindowText(hWnd, windowText, 512);
                 String wText = Native.toString(windowText);
-                WinDef.HWND hwnd = user32.FindWindow(null,  "WhatsApp - Pessoal — Microsoft\u200B Edge");
+                WinDef.HWND hwnd = user32.FindWindow(null,  "WhatsApp - Pessoal — Microsoft\u200B Edge"); //Defina o nome da janela do seu navegador
                 if (!wText.isEmpty() & hwnd !=null) {
                     WinDef.RECT rect = new WinDef.RECT();
                     user32.GetWindowRect(hwnd, rect);

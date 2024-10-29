@@ -16,7 +16,7 @@ public class ExecutarCliquesComRobot {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            String reciver = "Abel";
+            String reciver = "Amigo1"; //Defina o remetente
             for (char c : reciver.toCharArray()) {
                 int keyCode = KeyEvent.getExtendedKeyCodeForChar(c);
                 bot.keyPress(keyCode);
@@ -30,7 +30,7 @@ public class ExecutarCliquesComRobot {
                 e.printStackTrace();
             }
             int repetir = 10;
-            String message = "Estou testando automacao, enviando esta mensagem 10X";
+            String message = "Estou testando automacao, enviando esta mensagem 10X"; //Escreva a mensagem aqui
             int i = 0;
             while(i<repetir){
                 for (char c : message.toCharArray()) {
